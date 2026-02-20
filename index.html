@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maîtresse Lea - Paris 13</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-header">
+            <h2>MAÎTRESSE LEA</h2>
+            <div class="close-btn" onclick="toggleMenu()">✕</div>
+        </div>
+        <ul>
+            <li><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
+            <li><a href="#histoire" onclick="toggleMenu()">Histoire</a></li>
+            <li><a href="#pratiques" onclick="toggleMenu()">Pratiques</a></li>
+            <li><a href="#virtuel" onclick="toggleMenu()">Virtuel</a></li>
+            <li><a href="#tarifs" onclick="toggleMenu()">Tarifs</a></li>
+            <li><a href="#galerie" onclick="toggleMenu()">Galerie</a></li>
+            <li><a href="#avis" onclick="toggleMenu()">Avis</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Maîtresse Lea">Maîtresse Lea</h1>
+            <p class="subtitle">Domination Exclusive</p>
+            <div class="hero-info">
+                <span class="location">📍 Paris 13 - Olympiades</span>
+                <span class="divider">•</span>
+                <span class="type">🏠 Appart Privé</span>
+            </div>
+            <p class="motto">"Votre soumission, mon plaisir"</p>
+            <div class="hero-cta">
+                <a href="#tarifs" class="btn-primary">Pack 200€/mois</a>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- Histoire -->
+    <section id="histoire" class="section">
+        <div class="container">
+            <h2 class="section-title">Qui suis-je ?</h2>
+            <div class="content-simple">
+                <p>Dominatrice passionnée basée à Paris 13, je vous accueille dans mon appartement privé pour des séances sur-mesure. Spécialisée dans la domination physique et psychologique, j'adapte chaque moment à vos désirs.</p>
+                <p>Mon approche : élégance, intensité et respect des limites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pratiques -->
+    <section id="pratiques" class="section dark">
+        <div class="container">
+            <h2 class="section-title">Mes Pratiques</h2>
+            
+            <div class="practices-grid">
+                <div class="practice-card">
+                    <div class="practice-icon">🏠</div>
+                    <h3>En Appartement</h3>
+                    <ul>
+                        <li>Domination classique</li>
+                        <li>Fétichisme pieds</li>
+                        <li>Bondage & discipline</li>
+                        <li>Humiliation verbale</li>
+                        <li>Facesitting</li>
+                        <li>Jeux de rôle</li>
+                    </ul>
+                </div>
+
+                <div class="practice-card">
+                    <div class="practice-icon">💻</div>
+                    <h3>Virtuel</h3>
+                    <ul>
+                        <li>Visio en direct</li>
+                        <li>Messages quotidiens</li>
+                        <li>Tâches & défis</li>
+                        <li>Contenu personnalisé</li>
+                        <li>Contrôle à distance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtuel -->
+    <section id="virtuel" class="section">
+        <div class="container">
+            <h2 class="section-title">Services Virtuels</h2>
+            
+            <div class="virtual-options">
+                <div class="virtual-card">
+                    <h3>📱 Domination par Messages</h3>
+                    <p>Contrôle quotidien, ordres, tâches personnalisées</p>
+                </div>
+                <div class="virtual-card">
+                    <h3>📹 Séances Visio</h3>
+                    <p>Sessions en direct pour une domination intense</p>
+                </div>
+                <div class="virtual-card">
+                    <h3>🎁 Contenu Exclusif</h3>
+                    <p>Photos, vidéos personnalisées selon vos fantasmes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section id="tarifs" class="section dark">
+        <div class="container">
+            <h2 class="section-title">Tarifs</h2>
+            
+            <div class="pricing-container">
+                <!-- Pack Principal -->
+                <div class="pricing-card featured">
+                    <div class="badge">⭐ Pack Complet</div>
+                    <h3>Accès Illimité</h3>
+                    <div class="price">
+                        <span class="amount">200€</span>
+                        <span class="period">/mois</span>
+                    </div>
+                    <ul class="features">
+                        <li>✓ Accès appartement illimité</li>
+                        <li>✓ Contenu privé exclusif</li>
+                        <li>✓ Tirages réels</li>
+                        <li>✓ Offres & réductions</li>
+                        <li>✓ Messages prioritaires</li>
+                        <li>✓ Séances sur-mesure</li>
+                    </ul>
+                    <a href="#contact" class="btn-price">S'abonner</a>
+                </div>
+
+                <!-- Séances à l'unité -->
+                <div class="pricing-simple">
+                    <h3>Séances à l'unité</h3>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>1h - Découverte</span>
+                            <span class="price-tag">150€</span>
+                        </div>
+                        <div class="price-item">
+                            <span>1h30 - Standard</span>
+                            <span class="price-tag">200€</span>
+                        </div>
+                        <div class="price-item">
+                            <span>2h - Intensive</span>
+                            <span class="price-tag">300€</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Visio 30min</span>
+                            <span class="price-tag">80€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-info">
+                <p>💳 Paiement : Espèces, Virement, PayPal</p>
+                <p>🔒 Discrétion totale garantie</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie -->
+    <section id="galerie" class="section">
+        <div class="container">
+            <h2 class="section-title">Galerie</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/photo01.jpg" alt="Maîtresse Lea">
+                    <div class="gallery-overlay">
+                        <span>📸</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo02.jpg" alt="Maîtresse Lea">
+                    <div class="gallery-overlay">
+                        <span>📸</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo03.jpg" alt="Maîtresse Lea">
+                    <div class="gallery-overlay">
+                        <span>📸</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo04.jpg" alt="Maîtresse Lea">
+                    <div class="gallery-overlay">
+                        <span>📸</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo05.jpg" alt="Maîtresse Lea">
+                    <div class="gallery-overlay">
+                        <span>📸</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo06.jpg" alt="Maîtresse Lea">
+                    <div class="gallery-overlay">
+                        <span>📸</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="gallery-note">📱 Plus de contenu sur mes réseaux privés</p>
+        </div>
+    </section>
+
+    <!-- Avis -->
+    <section id="avis" class="section dark">
+        <div class="container">
+            <h2 class="section-title">Témoignages</h2>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Première expérience incroyable. Lea est à l'écoute et sait exactement comment pousser les limites. Son appart est discret et bien équipé."</p>
+                    <p class="review-author">— Marc, 35 ans</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Le pack mensuel vaut vraiment le coup. Accès illimité et contenu exclusif de qualité. Je recommande à 100%."</p>
+                    <p class="review-author">— Soumis L.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Domination psychologique parfaite. Lea sait comment me briser et me reconstruire. Une vraie pro."</p>
+                    <p class="review-author">— Pierre, 28 ans</p>
+                </div>
+            </div>
+
+            <div class="review-cta">
+                <a href="#contact" class="btn-secondary">Laisser un avis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Me joindre</h3>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Telegram</h4>
+                            <a href="https://t.me/MaitresseLea" target="_blank">@MaitresseLea</a>
+                            <p class="contact-note">Réponse rapide</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:maitresse.lea@proton.me">maitresse.lea@proton.me</a>
+                            <p class="contact-note">Réponse sous 24h</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Paris 13ème - Olympiades (Ligne 14)</p>
+                            <p class="contact-note">Adresse exacte après réservation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" name="name" placeholder="Votre nom / pseudo" required>
+                        <input type="email" name="email" placeholder="Votre email" required>
+                        <select name="subject" required>
+                            <option value="">Type de demande</option>
+                            <option value="pack">Pack 200€/mois</option>
+                            <option value="seance">Séance à l'unité</option>
+                            <option value="virtuel">Services virtuels</option>
+                            <option value="info">Informations</option>
+                        </select>
+                        <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                        <button type="submit" class="btn-primary">Envoyer</button>
+                    </form>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Maîtresse Lea - Paris 13</p>
+            <p class="footer-warning">⚠️ Contenu réservé aux adultes +18 ans</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -166,7 +166,7 @@ body {
   padding: 100px 20px;
 
   /* Image de fond - À remplacer par votre photo */
-  background-image: url("images/image00012.jpeg");
+  background-image: url("images/image00023.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1602,4 +1602,67 @@ footer {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   GALERIE — VOIR PLUS / VOIR MOINS (HTML/CSS PUR)
+   ═══════════════════════════════════════════════════════════ */
+
+/* Cacher la checkbox */
+.gallery-toggle-input {
+  display: none;
+}
+
+/* Cacher les images extra par défaut */
+.gallery-item.gallery-extra {
+  display: none;
+}
+
+/* Quand la checkbox est cochée, afficher les images extra */
+.gallery-toggle-input:checked ~ .gallery-grid .gallery-item.gallery-extra {
+  display: block;
+}
+
+/* Bouton wrapper */
+.gallery-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Style du bouton (label) */
+.btn-see-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border: 1px solid #c41e3a;
+  color: #c41e3a;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.btn-see-more:hover {
+  background: #c41e3a;
+  color: #fff;
+}
+
+/* Texte du bouton : "Voir plus" visible par défaut, "Voir moins" caché */
+.btn-see-more .label-voir-moins {
+  display: none;
+}
+
+/* Quand cochée : inverser */
+.gallery-toggle-input:checked ~ .gallery-btn-wrap .label-voir-plus {
+  display: none;
+}
+.gallery-toggle-input:checked ~ .gallery-btn-wrap .label-voir-moins {
+  display: inline;
 }

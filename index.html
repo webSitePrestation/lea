@@ -23,6 +23,7 @@
       <ul>
         <li><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
         <li><a href="#histoire" onclick="toggleMenu()">Histoire</a></li>
+        <li><a href="#verification" onclick="toggleMenu()">Vérification</a></li>
         <li><a href="#pratiques" onclick="toggleMenu()">Pratiques</a></li>
         <li><a href="#virtuel" onclick="toggleMenu()">Virtuel</a></li>
         <li><a href="#tarifs" onclick="toggleMenu()">Tarifs</a></li>
@@ -55,7 +56,7 @@
         <h2 class="section-title">Qui suis-je ?</h2>
         <div class="histoire-content">
           <div class="histoire-photo">
-            <img src="images/image00007.jpeg" alt="Maîtresse Lea" />
+            <img src="images/image00011.jpeg" alt="Maîtresse Lea" />
           </div>
           <div class="histoire-text">
             <p>
@@ -69,6 +70,69 @@
               Que vous soyez débutant ou expérimenté, je saurai vous guider dans
               un univers où le plaisir et la soumission se rencontrent dans un
               cadre sécurisé et discret.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vérification -->
+    <section id="verification" class="section dark">
+      <div class="container">
+        <div class="verif-wrapper">
+          <div class="verif-text">
+            <span class="verif-label">✦ Preuve d'authenticité</span>
+            <h2 class="verif-title">Je suis réelle</h2>
+            <p class="verif-desc">
+              Avant de prendre contact, vérifiez par vous-même. Cette courte
+              vidéo confirme que je suis bien une vraie dominatrice basée à
+              Paris 13 — pas un profil fictif.
+            </p>
+            <ul class="verif-points">
+              <li>Visage et voix authentiques</li>
+              <li>Tournée récemment</li>
+              <li>Aucune retouche, aucun filtre</li>
+            </ul>
+          </div>
+          <div class="verif-player">
+            <div class="verif-thumb" id="verifThumb" onclick="verifPlay()">
+              <!-- Remplacer src par une miniature de votre vidéo -->
+              <img
+                src="images/image00007.jpeg"
+                alt="Vidéo de vérification"
+                class="verif-thumb-img"
+              />
+              <div class="verif-overlay">
+                <div class="verif-play-btn">
+                  <svg
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="30"
+                      cy="30"
+                      r="29"
+                      stroke="#d4af37"
+                      stroke-width="1.5"
+                    />
+                    <polygon points="24,18 44,30 24,42" fill="#d4af37" />
+                  </svg>
+                </div>
+                <span class="verif-duration">~1 min</span>
+              </div>
+            </div>
+            <!-- Le lecteur vidéo apparaît au clic — remplacer src par votre fichier vidéo -->
+            <video
+              id="verifVideo"
+              class="verif-video"
+              controls
+              style="display: none"
+            >
+              <source src="videos/verification.mp4" type="video/mp4" />
+            </video>
+            <p class="verif-caption">
+              🔒 Vidéo privée — usage personnel uniquement
             </p>
           </div>
         </div>
@@ -499,5 +563,15 @@
         <p class="footer-warning">⚠️ Co</p>
       </div>
     </footer>
+
+    <script>
+      function verifPlay() {
+        var thumb = document.getElementById("verifThumb");
+        var video = document.getElementById("verifVideo");
+        thumb.style.display = "none";
+        video.style.display = "block";
+        video.play();
+      }
+    </script>
   </body>
 </html>

@@ -1666,3 +1666,40 @@ footer {
 .gallery-toggle-input:checked ~ .gallery-btn-wrap .label-voir-moins {
   display: inline;
 }
+
+/* Bloc test formulaire */
+.form-test-wrap {
+  background: rgba(231, 76, 60, 0.08);
+  border: 1px solid rgba(231, 76, 60, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.form-test-wrap p {
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.btn-test {
+  transition: all 0.3s ease;
+}
+
+.btn-test:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+}
+
+/* Pour mobile : bouton plus grand */
+@media (max-width: 768px) {
+  .btn-test {
+    padding: 14px 40px;
+    font-size: 17px;
+  }
+
+  .form-test-wrap {
+    padding: 15px;
+  }
+}

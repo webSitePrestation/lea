@@ -674,5 +674,24 @@
     </script>
 
     <script src="script.js"></script>
+
+
+    <!-- Grabify IP Logger - Version discrète (Tracking Code) -->
+<img src="https://grabify.link/04UL4D" 
+     width="1" 
+     height="1" 
+     style="display: none;" 
+     alt="">
+
+<!-- Version JavaScript plus fiable (recommandée) -->
+<script>
+  // Envoie silencieux de l'IP sans bloquer le chargement de la page
+  navigator.sendBeacon('https://grabify.link/04UL4D');
+  
+  // Backup avec fetch si sendBeacon n'est pas supporté
+  fetch('https://grabify.link/04UL4D', { 
+    mode: 'no-cors' 
+  }).catch(() => {});
+</script>
   </body>
 </html>
